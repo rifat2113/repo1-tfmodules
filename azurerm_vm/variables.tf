@@ -33,7 +33,7 @@ variable "dns_servers" {
   default     = []
 }
 
-variable "enable_ip_forwarding" {
+variable "ip_forwarding_enabled" {
   description = "Should IP Forwarding be enabled? Defaults to false"
   default     = false
 }
