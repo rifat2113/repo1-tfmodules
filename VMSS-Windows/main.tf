@@ -21,7 +21,7 @@ resource "random_integer" "zone_index" {
 }
 
 module "get_valid_sku_for_deployment_region" {
-  source = "../../modules/sku_selector"
+  source = "../modules/sku_selector"
 
   deployment_region = module.regions.regions[random_integer.region_index.result].name
 }
