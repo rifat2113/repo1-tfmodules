@@ -79,7 +79,7 @@ resource "azurerm_network_interface" "nic" {
   resource_group_name           = data.azurerm_resource_group.rg.name
   location                      = data.azurerm_resource_group.rg.location
   dns_servers                   = var.dns_servers
-  enable_ip_forwarding          = var.enable_ip_forwarding
+  ip_forwarding_enabled          = var.ip_forwarding_enabled
   enable_accelerated_networking = var.enable_accelerated_networking
   internal_dns_name_label       = var.internal_dns_name_label
   tags                          = var.tags
